@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 # Load student data from the JSON file
-with open("apiq-vercel-python.json", "r") as file:
+with open("api/q-vercel-python.json", "r") as file:
     students_data = json.load(file)
 
 # Create a dictionary for quick look-up by name

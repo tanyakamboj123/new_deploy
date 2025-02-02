@@ -6,7 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = Flask(__name__)
 app=CORS()
-# Load student data from JSON file
+# Load student data from JSON filevhgvhgvhvhhb
 with open("q-vercel-python.json", "r") as file:
     
     student_data = json.load(file)

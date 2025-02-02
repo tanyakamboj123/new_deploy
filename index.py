@@ -5,13 +5,13 @@ import json
 from fastapi.middleware.cors import CORSMiddleware
 
 app = Flask(__name__)
-app=CORS()
+CORS(app)
 # Load student data from JSON filevhgvhgvhvhhb
 with open("q-vercel-python.json", "r") as file:
     
     student_data = json.load(file)
 
-@app.route('/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def get_marks():
     names = request.args.getlist('name')  # Get all 'name' query parameters
    

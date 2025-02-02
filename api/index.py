@@ -30,3 +30,6 @@ class handler(BaseHTTPRequestHandler):
                 key, value = param.split('=')
                 query_dict[key] = value
         return query_dict.get('name', [])
+
+
+#run the server
